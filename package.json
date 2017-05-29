@@ -1,0 +1,24 @@
+{
+  "name": "bot3",
+  "version": "1.0.0",
+  "description": "just a bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinezdelprenois/bot3.git"
+  },
+  "author": "marto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martinezdelprenois/bot3/issues"
+  },
+  "homepage": "https://github.com/martinezdelprenois/bot3#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "request": "^2.81.0"
+  }
+}
