@@ -19,7 +19,7 @@ app.get('/', function(req, res){
 
 //FACEBOOK ROUTE
 app.get('/webhook', function(req,res){
-	if(req.query ['hub.verify_token']  === "hub_challenge"){
+	if(req.query ['hub.verify_token']  === "FOOD DU FOOD"){
 		res.send(req.query['hub.challenge'])
 	}
 
