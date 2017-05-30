@@ -14,12 +14,12 @@ app.use(body_parser.json())
 
 // ROUTES
 app.get('/', function(req, res){
-	res.send("Hi there welcome, we da fillers in this one joint, into the disjoint")
+	res.send("Hi there welcome, we da fillers in this one joint, into")
 })
 
 //FACEBOOK ROUTE
 app.get('/webhook', function(req,res){
-	if(req.query ['hub.verify_token']  === "jagu_foods"){
+	if(req.query ['hub.verify_token']  === "hub_challenge"){
 		res.send(req.query['hub.challenge'])
 	}
 
