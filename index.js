@@ -13,9 +13,7 @@ app.use(body_parser.urlencoded({extended: false}))
 app.use(body_parser.json())
 
 // ROUTES
-app.get('/', function(req, res){
-	res.send("Hi there welcome, we da fillers in this one joint, into")
-})
+
 
 let  token ="EAAEa2vcB3bgBAKD5Ae0PQJ9Det03ZCUc3Bk2LZBZAyovunHO0nM4ZCZBE5HZChIvfDkJzmKs1Uk4bg1cE01Lq9ZBlFUZAjv4cmrdUKZCG9pL9jBAqHQ290NxpvKZCrBbZCzGIZBdHLkreLpF9q0FhkXJVxNwF6ZCLrBDPZBxZCZBg8l8B89e3QZDZD";
 
@@ -36,7 +34,7 @@ app.post('webhook', function(req,res){
 		 let sender = event.sender.id
 		 if(event.message && event.message.text){
 		 	let text = event.message.text
-		 	sendText(sender, "text echo: " + text.substring(0,100))
+		 	sendText(sender, "Text echo: " + text.substring(0,100))
 		 }
 	}
 
